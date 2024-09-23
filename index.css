@@ -1,9 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    width: 100%; 
+
+    max-width: 1700px;
+}
+
+.right {
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .buttons {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
 
-    width: 100%;
+    width: calc(100% - 400px);
 }
 
 .btn {
@@ -26,6 +45,7 @@
     width: 250px;
     height: 250px;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .btn label {
@@ -33,11 +53,64 @@
     font-size: 1.5rem;
 }
 
-.btn.reccomended {
-    justify-self: flex-end;
+.btn.disabled {
+    opacity: 0.3;
+    pointer-events: none;
 }
 
 .btn.reccomended button {
     opacity: 0.7;
     pointer-events: none;
+
+    border-color: blue;
+    color: blue;
+}
+
+.btn.reccomended label {
+    color: blue;
+}
+
+.log {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 10px;
+
+    margin: 20px;
+
+    height: 230px;
+    width: 230px;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    border: solid 1px gray;
+    border-radius: 2px;
+}
+
+.log p {
+    margin: 0;
+    padding: 3px;
+    font-size: 1rem;
+
+    width: 100%;
+}
+
+.log p:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+#DOWNLOAD {
+    margin-top: -5px;
+    padding: 3px;
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+.name {
+    font-style: italic;
+    opacity: 50%;
+    margin: 2px;
 }

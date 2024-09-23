@@ -3,55 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>YO Vessat</title>
 
     <script src="index.js"></script>
+    <script src="download.js"></script>
     <link rel="stylesheet" href="index.css">
+    <script type="text/javascript">
+        window.onbeforeunload = function() {
+            return "Dude, are you sure you want to leave? Think of the kittens!";
+        }
+    </script>
 </head>
 <body>
-    <div class="buttons">
-        <div class="btn">
-            <button class="b" target="1">1</button>
-            <label id="1">00:00</label>
+    <div class="container">
+        <div class="buttons">
+            <div class="btn">
+                <button class="b" target="1">1</button>
+                <label id="1">00:00</label>
+            </div>
+            <div class="btn">
+                <button class="b" target="2">2</button>
+                <label id="2">00:00</label>
+            </div>
+            <div class="btn">
+                <button class="b" target="3">3</button>
+                <label id="3">00:00</label>
+            </div>
+            <div class="btn">
+                <button class="b" target="4">4</button>
+                <label id="4">00:00</label>
+            </div>
+            <div class="btn">
+                <button class="b" target="5">5</button>
+                <label id="5">00:00</label>
+            </div>
+            <div class="btn">
+                <button class="b" target="6">6</button>
+                <label id="6">00:00</label>
+            </div>
+            <div class="btn">
+                <button class="b" target="7">7</button>
+                <label id="7">00:00</label>
+            </div>
+            <div class="btn">
+                <button class="b" target="8">8</button>
+                <label id="8">00:00</label>
+            </div>
         </div>
-        <div class="btn">
-            <button class="b" target="2">2</button>
-            <label id="2">00:00</label>
-        </div>
-        <div class="btn">
-            <button class="b" target="3">3</button>
-            <label id="3">00:00</label>
-        </div>
-        <div class="btn">
-            <button class="b" target="4">4</button>
-            <label id="4">00:00</label>
-        </div>
-        <div class="btn">
-            <button class="b" target="5">5</button>
-            <label id="5">00:00</label>
-        </div>
-        <div class="btn">
-            <button class="b" target="6">6</button>
-            <label id="6">00:00</label>
-        </div>
-        <div class="btn">
-            <button class="b" target="7">7</button>
-            <label id="7">00:00</label>
-        </div>
-        <div class="btn">
-            <button class="b" target="8">8</button>
-            <label id="8">00:00</label>
-        </div>
-        <div class="btn reccomended">
-            <button id="r">1</button>
-            <label >Suositeltu</label>
+        <div class="right">
+            <div class="btn reccomended">
+                <button id="r">1</button>
+                <label >Suositeltu</label>
+            </div>
 
+            <div class="log" id="LOG">
+            </div>
+            <button id="DOWNLOAD">Tallenna logitiedot</button>
+            <span class="name" id="NAME"></span>
         </div>
     </div>
-
-
-    <div class="log" id="LOG">
-
-    </div>
+    
 </body>
 </html>
